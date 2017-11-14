@@ -160,7 +160,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
-	font-family: 'Roboto Slab', serif !important;
+	font-family: 'light', sans-serif !important;
 }
 
 button[disabled],
@@ -5196,7 +5196,7 @@ tbody.collapse.in {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
 	position: fixed;
-	right: 0;
+	right: 9.3vw;
 	left: 0;
 	z-index: 1030;
 }
@@ -8323,7 +8323,9 @@ button.close {
 }
 
 .slide .chamada {
-	margin-top: 7vh;
+	position: relative;
+	top: 10.5vh;
+	margin-top: 15vh;
 	float: none;
 }
 
@@ -8333,8 +8335,6 @@ button.close {
 	font-family: 'light', sans-serif;
 	/*text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.7);*/
 }
-
-
 
 .slide .chamada p {
 	margin-top: 30px;
@@ -8737,7 +8737,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'light', serif;
 	font-size: 24px;
 	font-weight: 500;
 }
@@ -8938,11 +8938,11 @@ p {
 a.btsobre {
 	margin-top: 20px;
 	background: transparent;
-	border: 2px solid #b40006;
+	border: 2px solid #fff;
 	display: block;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'light', serif;
 	text-align: center !important;
-	color: #b40006;
+	color: #fff;
 	width: 20%;
 	font-size: 17px;
 	font-weight: 700;
@@ -9157,12 +9157,13 @@ a.btsobre:hover {
 	color: #b40006;
 	font-size: 24px;
 	font-weight: 700;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'light', serif;
 }
 
 .ebook p {
 	font-size: 20px;
 	margin-top: 40px;
+	font-family: 'light';
 }
 
 .ebook a img {
@@ -9173,17 +9174,20 @@ a.btsobre:hover {
 
 .ebook input[type="submit"] {
 	display: block;
-	background: #951300;
+	background: #000;
 	width: 100%;
-	border-radius: 999999px;
+	border: 1px solid #fff;
 	text-align: center;
 	margin-top: 20px;
 	height: 50px;
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
-	color: #f2f2f2;
+	color: #fff;
 	font-weight: 700;
 	text-decoration: none;
+}
+.ebook input[type="submit"]:hover {
+	background: #1c1c1c;
 }
 
 .ebook input[type="email"] {
@@ -9191,12 +9195,14 @@ a.btsobre:hover {
 	font-weight: 400;
 	max-width: 100%;
 	border: 1px solid #ccc;
+	font-family: 'regular';
+	outline-style: none;
 }
 
 .ebook input {
 	border: medium none;
 	border-radius: 999999px;
-	font-family: "Lato", sans-serif;
+	font-family: "regular", sans-serif;
 	height: 50px;
 	margin-top: 40px;
 	padding: 0;
@@ -9769,6 +9775,8 @@ body::-webkit-scrollbar-thumb
   transparent)
 }
 
+/* Testimonials */
+
 #tcb-testimonial-carousel {
   margin-top: 30px;
 }
@@ -9821,4 +9829,378 @@ body::-webkit-scrollbar-thumb
   #tcb-testimonial-carousel .media-object {
     margin-bottom: 15px;
   }
+}
+
+/* Navbar Fade Effect */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) !important;
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+}
+
+.navbar-default2-index {
+	background-color: #000 !important;
+	border-color: #e7e7e7;
+	margin-top: 0 !important;
+}
+.navbar-default2-index .navbar-nav > li > a:hover,
+.navbar-default2-index .navbar-nav > li > a:focus {
+	color: #333;
+	background-color: transparent;
+}
+.navbar-fixed-top2,
+.navbar-fixed-bottom {
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 1030;
+}
+.navbar-right2 {
+    float: right !important;
+    margin-right: 5vh;
+    top: 4px;
+}
+
+/*Input*/
+.name_input_section, .hsa_btn_confirm_subscribe_section{
+	height: 40px;
+	border-radius: 50px;
+	border: 1px solid;
+	background-color: transparent;
+	font-size: 18px;
+}
+
+.name_input_section{
+	border-color: #fff;
+	background: #fff;
+	margin-right: 25px;
+	padding-left: 20px;
+	outline-style: none;
+	font-family: 'regular';
+}
+
+.hsa_btn_confirm_subscribe_section{
+	font-family: 'light' !important;
+	color: #fff;
+	font-weight: 700;
+	border-color: #fff;
+	width: 12vw;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline-style: none;
+	transition: 0.5s;
+}
+
+.hsa_btn_confirm_subscribe_section:hover {
+	transition: 0.5s;
+	border-color: transparent;
+	background-color: #222222;
+}
+
+@media(min-width: 1701px){
+	.name_input_section{
+		padding-left: 20px;
+	}
+	.hsa_btn_confirm_subscribe_section{
+		width: 20%;
+	}
+}
+@media(max-width: 1700px){
+	.name_input_section{
+		padding-left: 20px;
+	}
+	.hsa_btn_confirm_subscribe_section{
+	}
+}
+@media(max-width: 991px){
+	.col-sm-6{
+		width: 250px;
+	}
+	.optin-form{
+		width: 100%;
+	}
+	.name_input_section{
+		text-align: center;
+		padding-left: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.hsa_btn_confirm_subscribe_section{
+		width: 100%;
+	}
+}
+@media(min-width: 992px){
+	.name_input_section{
+		margin-right: 10px;
+	}
+}
+@media(max-width: 768px){
+	.col-sm-6{
+		width: 250px;
+	}
+	.col-sm-4{
+		width: 100%;
+	}
+	.optin-top{
+		top: 80%;
+	}
+}
+@media(max-width: 600px){
+	.name_input_section{
+		margin-left: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.hsa_btn_confirm_subscribe_section{
+		width: 100%;
+	}
+}
+@media(max-width: 573px){
+	.col-sm-6{
+		width: 400px;
+	}
+}
+@media(max-width: 475px){
+	.col-sm-6{
+		width: 350px;
+	}
+}
+
+section#about-goffi {
+ 	   background: url("../assets/images/pexels-photo-91224-new.jpg") no-repeat center;
+       text-align: center;
+
+   }
+   section#about-goffi * {
+ /* font here */
+   }
+   section#about-goffi div.container {
+ padding: 6%;
+ margin: auto;
+ max-width: 1170px;
+   }
+   section#about-goffi div#foto-goffi {
+ display: inline-block;
+ zoom: 1;
+ *display: inline;
+ text-align: right;
+ max-width: 60%;
+ vertical-align: top;
+   }
+   section#about-goffi div#foto-goffi img {
+ display: inline;
+ width: 100%;
+ margin-bottom: 6%;
+ max-width: 200px;
+ border-radius: 999px;
+   }
+   @media (min-width: 768px) {
+ section#about-goffi div#foto-goffi {
+     max-width: 38%;
+     width: 25%;
+ }
+ section#about-goffi div#goffi-description {
+       display: inline-block;
+     zoom: 1;
+     *display: inline;
+     width: 75%;
+ }
+ section#about-goffi div#goffi-description * {
+     text-align: left;
+ }
+ section#about-goffi div#goffi-description h2, section#about-goffi div#goffi-description p, section#about-goffi div#goffi-description > div:first-of-type {
+     padding-left: 70px;
+ }
+   }
+   section#about-goffi h2 {
+ color: #fff;
+ font-size: 26px;
+ font-weight: 700;
+ margin: auto;
+ text-align: left;
+   }
+   @media (max-width: 991px) {
+ section#about-goffi h2 {
+     font-size: 25px;
+ }
+   }
+   @media (max-width: 570px) {
+ section#about-goffi h2 {
+     font-size: 24px;
+ }
+   }
+   section#about-goffi p {
+ color: #fff;
+ font-family: 'light', serif;
+ font-weight: 300;
+ font-size: 18px;
+ margin: 1em auto;
+ text-align: left;
+   }
+   @media (max-width: 991px) {
+ section#about-goffi p {
+     font-size: 15.5px;
+ }
+   }
+   @media (max-width: 570px) {
+ section#about-goffi p {
+     font-size: 16px;
+ }
+   }
+   section#about-goffi div#social-buttons {
+ padding: 10px 0;
+   }
+   section#about-goffi div#social-buttons .group {
+ display: inline-block;
+ zoom: 1;
+ *display: inline;
+   }
+   section#about-goffi div#social-buttons div.social-button {
+ background: transparent;
+ border: none;
+ display: inline-block;
+ zoom: 1;
+ *display: inline;
+ line-height: 0;
+ margin: 0 6px 12px;
+ padding: 0px;
+ vertical-align: middle;
+   }
+   section#about-goffi div#social-buttons div.social-button img {
+ height: 25px;
+ width: auto;
+   }
+div#goffi-description{text-transform: initial;}
+
+/* Footer */
+
+.footer {
+  background: #000;
+  min-height: 200px;
+  font-family: 'fontSemiBold', serif;
+}
+
+.footer h3 {
+  font-family: 'light';
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.footer ul {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer ul li {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.footer ul li p {
+  font-family: 'light';
+  font-size: 17px;
+  color: #5e5e5e;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 0px 50px;
+}
+
+.footer ul li img {
+  max-width: 50px;
+}
+
+.footer .sharesocial {
+  margin-top: 20px;
+  height: 28px;
+}
+
+.footer .sharesocial a img {
+  max-width: 130px;
+}
+
+@media (max-width: 768px) {
+  .footer ul {
+    margin-bottom: 50px;
+  }
+  .footer ul li h3 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .footer ul li img.svgicons {
+    max-width: 50px;
+  }
+}
+.footer2 {
+  clear: both;
+  background: #101010;
+  padding: 20px 10px;
+}
+
+.footer2 p{
+  font-family: 'light', serif;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.footer2 span{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer2 .logofooter {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer2 .copyright {
+  color: #ffffff;
+  text-align: center;
+}
+
+.social-description {
+   font-size: 14px;
+   color: #545454;
+}
+
+/*About Us*/
+.bginsight{
+	background: url(../assets/images/girl-insight.jpg) no-repeat;
+	background-position: 100% 20%;
+	background-size: cover;
+}
+.chamada-about{
+	margin-bottom: 30vw;
 }
