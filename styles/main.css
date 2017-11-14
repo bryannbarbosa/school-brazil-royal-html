@@ -9570,7 +9570,7 @@ a.btsobre:hover {
 }
 
 .optin-top{
-	height: 56px;
+	height: 50px;
 	align-items: center;
 	display: flex;
 	display: -moz-box;
@@ -9938,8 +9938,6 @@ body::-webkit-scrollbar-thumb
 	.name_input_section{
 		padding-left: 20px;
 	}
-	.hsa_btn_confirm_subscribe_section{
-	}
 }
 @media(max-width: 991px){
 	.col-sm-6{
@@ -9956,6 +9954,11 @@ body::-webkit-scrollbar-thumb
 	}
 	.hsa_btn_confirm_subscribe_section{
 		width: 100%;
+	}
+	.navbar-right2 {
+    	float: left !important;
+    	margin-right: 0;
+    	top: 0;
 	}
 }
 @media(min-width: 992px){
@@ -10198,9 +10201,76 @@ div#goffi-description{text-transform: initial;}
 /*About Us*/
 .bginsight{
 	background: url(../assets/images/girl-insight.jpg) no-repeat;
-	background-position: 100% 20%;
+	background-position: 30% 20%;
 	background-size: cover;
 }
 .chamada-about{
-	margin-bottom: 30vw;
+	margin-bottom: 50%;
+}
+@media(max-width: 991px){
+	.name_input{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.hsa_btn_confirm_subscribe{
+		width: 100%;
+	}
+	.optin-top{
+		display: block;
+	}
+	.navbar-collapse.in {
+		overflow-y: inherit;
+	}
+}
+
+/*Input*/
+.name_input, .hsa_btn_confirm_subscribe{
+	height: 40px;
+	border-radius: 50px;
+	border: 1px solid;
+	background-color: transparent;
+	font-size: 18px;
+}
+
+.name_input{
+	border-color: #fff;
+	background: #fff;
+	margin-right: 25px;
+	outline-style: none;
+}
+
+.hsa_btn_confirm_subscribe{
+	font-family: 'fontSemiBold';
+	color: #fff;
+	font-weight: 700;
+	border-color: #fff;
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline-style: none;
+	transition: 0.5s;
+}
+
+.hsa_btn_confirm_subscribe:hover {
+	transition: 0.5s;
+	border-color: transparent;
+	background-color: #222222;
+}
+
+/*about school*/
+.about-school{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.about-school h1{
+	text-align: center;
+	font-family: 'regular';
+	font-size: 30pt;
+	padding-bottom: 30px;
+}
+.about-school p{
+	font-family: 'light';
+	font-size: 18pt;
 }
