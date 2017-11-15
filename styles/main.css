@@ -8905,30 +8905,10 @@ p {
 	max-height: 65px;
 }
 
-.blog {
-	padding: 40px 0px;
-	margin-bottom: 20px;
-}
-
 .blog .posts {
 	margin-top: 40px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #ccc;
-}
-
-.blog .posts a.btblog {
-	margin-top: 20px;
-	background: transparent;
-	border: 2px solid #7b7b7b;
-	display: block;
-	font-family: 'Roboto Slab', serif;
-	text-align: center;
-	color: #7b7b7b;
-	width: 50%;
-	font-size: 18px;
-	font-weight: 700;
-	padding: 6px 0px;
-	border-radius: 9999px;
 }
 
 .blog .posts a.btblog:hover {
@@ -8962,33 +8942,9 @@ a.btsobre:hover {
 	font-size: 16px;
 }
 
-.blog .posts a p {
-	font-size: 16px;
-	margin-top: 20px;
-}
-
 .blog .posts a:hover {
 	text-decoration: none;
 	/*background: #ffff00;*/
-}
-
-.blog h1 {
-	font-weight: 600;
-	font-family: 'Roboto Slab', serif;
-  font-size: 32px;
-	margin-bottom: 15px;
-	color: #b40006;
-	position: relative;
-	text-align: center;
-}
-
-.blog h3{
-	font-weight: 600;
-	font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-	color: #7b7b7b;
-	text-align: center;
-	font-style: italic;
 }
 
 .blog a.btverhacks {
@@ -10273,4 +10229,106 @@ div#goffi-description{text-transform: initial;}
 .about-school p{
 	font-family: 'light';
 	font-size: 18pt;
+}
+
+/*Blog posts*/
+.blog {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.blog h1 {
+	font-weight: 600;
+	font-family: 'regular', sans-serif;
+  	font-size: 32px;
+	margin-bottom: 15px;
+	color: #262626;
+	position: relative;
+	text-align: center;
+}
+
+.blog h2{
+	font-weight: 700;
+	font-family: 'light', sans-serif;
+  	font-size: 24px;
+	color: #333333;
+}
+
+.blog h3{
+	font-weight: 600;
+	font-family: 'light', sans-serif;
+  	font-size: 18px;
+	color: #7b7b7b;
+	text-align: center;
+	font-style: italic;
+}
+
+.blog .posts a p {
+	font-family: 'light', sans-serif;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.blog .posts a.btblog {
+	margin-top: 20px;
+	background: transparent;
+	border: 2px solid #7b7b7b;
+	display: block;
+	font-family: 'regular', serif;
+	text-align: center;
+	color: #7b7b7b;
+	width: 50%;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 6px 0px;
+	border-radius: 9999px;
+}
+.change-page{
+	padding-top: 20px;
+	text-align: center;
+}
+.change-page a:hover{
+	color: #404040;
+}
+.back-page{
+	color: #000;
+	font-size: 26px;
+}
+.next-page{
+	color: #000;
+	font-size: 26px;
+}
+
+/*contato*/
+.contato{
+	padding-bottom: 30px;
+}
+.contato h2{
+	text-align: center;
+	font-weight: 600;
+	font-family: 'regular', sans-serif;
+	font-size: 36px;
+	color: #fff;
+}
+.title-contato{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: black;
+}
+.contato-form{
+	padding-top: 30px;
+}
+.contato-form p{
+	font-family: 'light', sans-serif;
+	font-size: 22px;
+	margin-bottom: 3px;
+}
+.contato-form input{
+	font-size: 30px;
+	margin-bottom: 10px;
+	width: 555px;
+}
+.contato-form textarea{
+	width: 555px;
+	font-size: 30px;
 }
